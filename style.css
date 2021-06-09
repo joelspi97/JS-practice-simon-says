@@ -1,3 +1,7 @@
+:root {
+    --project-black: rgb(29, 28, 36);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,3 +13,79 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(198, 193, 219);
+}
+
+.gameboard {
+    width: 40rem;
+    height: 40rem;
+    border-radius: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.skyblue {
+    background-color: #22a6b3;
+    border-right: solid 0.1rem var(--project-black);
+    border-bottom: solid 0.1rem var(--project-black);
+}
+.skyblue.light {
+    background-color: #7ed6df;
+}
+
+.orange {
+    background-color: #f0932b;
+    border-left: solid 0.1rem var(--project-black);
+    border-bottom: solid 0.1rem var(--project-black);
+}
+.orange.light {
+    background-color: #ffbe76;
+}
+
+.purple {
+    background-color: #be2edd;
+    border-right: solid 0.1rem var(--project-black);
+    border-top: solid 0.1rem var(--project-black);
+}
+.purple.light {
+    background-color: #e056fd;
+}
+
+
+.green {
+    background-color: #6ab04c;
+    border-left: solid 0.1rem var(--project-black);
+    border-top: solid 0.1rem var(--project-black);
+}
+.green.light {
+    background-color: #badc58;
+}
+
+
+.start-btn {
+    position: absolute;
+    width: 45rem;
+    height: 10rem;
+    background-color: whitesmoke;
+    font-size: 3rem;
+    color: var(--project-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 0.1rem var(--project-black);
+    user-select: none;
+}
+.start-btn:hover {
+    background-color: rgb(251, 255, 218);
+}
+.hide {
+    display: none;
+}
