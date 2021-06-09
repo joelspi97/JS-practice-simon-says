@@ -3,7 +3,7 @@ const ORANGE = document.getElementById('orange');
 const PURPLE = document.getElementById('purple');
 const GREEN = document.getElementById('green');
 const START_BTN = document.getElementById('start-btn');
-const MAX_LEVEL = 2;
+const MAX_LEVEL = 10;
 
 class Game {
     constructor() {
@@ -125,7 +125,6 @@ class Game {
     }
 }
 
-let prueba;
 
-START_BTN.addEventListener('click', () => prueba = new Game);
+START_BTN.addEventListener('click', () => new Game);
 
